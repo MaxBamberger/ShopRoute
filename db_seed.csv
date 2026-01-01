@@ -1,0 +1,166 @@
+item,category,normalized_name,source
+banana,Produce,Bananas,rules
+bananas,Produce,Bananas,rules
+spinach,Produce,Spinach,rules
+lettuce,Produce,Lettuce,rules
+apple,Produce,Apples,rules
+apples,Produce,Apples,rules
+bread,Bakery,Bread,rules
+sourdough,Bakery,Sourdough bread,rules
+sour dough,Bakery,Sourdough bread,rules
+bagel,Bakery,Bagels,rules
+bagels,Bakery,Bagels,rules
+milk,Dairy,Milk,rules
+yogurt,Dairy,Yogurt,rules
+greek yogurt,Dairy,Greek Yogurt,rules
+cheese,Dairy,Cheese,rules
+ice cream,Frozen,Ice Cream,rules
+ice-cream,Frozen,Ice Cream,rules
+icecream,Frozen,Ice Cream,rules
+butter,Dairy,Butter,rules
+eggs,Dairy,Eggs,rules
+garlic,Produce,Garlic,rules
+peas,Produce,Peas,rules
+cereal,Pantry,Cereal,rules
+pasta,Pantry,Pasta,rules
+rice,Pantry,Rice,rules
+coffee,Beverages,Coffee,rules
+tea,Beverages,Tea,rules
+honey,Pantry,Honey,rules
+pasta,Pantry,Pasta,rules
+noodles,Pantry,Noodles,rules
+peanut butter,Pantry,Peanut Butter,rules
+almond butter,Pantry,Almond Butter,rules
+dates,Produce,Dates,rules
+chocolate,Snackes,Chocolate,rules
+bread crumbs,Pantry,Bread Crumbs,rules
+walnuts,Pantry,Walnuts,rules
+chicken,Meat,Chicken,rules
+beef,Meat,Beef,rules
+pork,Meat,Pork,rules
+steak,Meat,Steak,rules
+bacon,Meat,Bacon,rules
+sausage,Meat,Sausage,rules
+turkey,Meat,Turkey,rules
+ham,Meat,Ham,rules
+lamb,Meat,Lamb,rules
+salmon,Seafood,Salmon,rules
+shrimp,Seafood,Shrimp,rules
+tuna,Seafood,Tuna,rules
+cod,Seafood,Cod,rules
+crab,Seafood,Crab,rules
+lobster,Seafood,Lobster,rules
+scallop,Seafood,Scallop,rules
+banana,Produce,Banana,rules
+apple,Produce,Apple,rules
+spinach,Produce,Spinach,rules
+lettuce,Produce,Lettuce,rules
+tomato,Produce,Tomato,rules
+onion,Produce,Onion,rules
+onions,Produce,Onions,rules
+potato,Produce,Potatoes,rules
+potatoes,Produce,Potatoes,rules
+carrots,Produce,Carrots,rules
+raspberry,Produce,Raspberry,rules
+vegetable,Produce,Vegetable,rules
+milk,Dairy,Milk,rules
+yogurt,Dairy,Yogurt,rules
+cheese,Dairy,Cheese,rules
+butter,Dairy,Butter,rules
+cream,Dairy,Cream,rules
+eggs,Dairy,Eggs,rules
+egg,Dairy,Egg,rules
+bread,Bakery,Bread,rules
+bagel,Bakery,Bagel,rules
+sourdough,Bakery,Sourdough,rules
+bun,Bakery,Bun,rules
+roll,Bakery,Roll,rules
+croissant,Bakery,Croissant,rules
+ice cream,Frozen,Ice Cream,rules
+popsicle,Frozen,Popsicle,rules
+frozen veggies,Frozen,Frozen Vegetables,rules
+frozen vegetables,Frozen,Frozen Vegetables,rules
+ice-cream,Frozen,Ice-Cream,rules
+icecream,Frozen,Icecream,rules
+rice,Pantry,Rice,rules
+pasta,Pantry,Pasta,rules
+canned,Pantry,Canned,rules
+beans,Pantry,Beans,rules
+sauce,Pantry,Sauce,rules
+oil,Pantry,Oil,rules
+vinegar,Pantry,Vinegar,rules
+flour,Pantry,Flour,rules
+sugar,Pantry,Sugar,rules
+spice,Pantry,Spice,rules
+cereal,Pantry,Cereal,rules
+chip,Snacks,Chip,rules
+chips,Snacks,Chips,rules
+cracker,Snacks,Cracker,rules
+cookie,Snacks,Cookie,rules
+chocolate,Snacks,Chocolate,rules
+popcorn,Snacks,Popcorn,rules
+granola,Snacks,Granola,rules
+juice,Beverages,Juice,rules
+soda,Beverages,Soda,rules
+cola,Beverages,Cola,rules
+water,Beverages,Water,rules
+beer,Beverages,Beer,rules
+wine,Beverages,Wine,rules
+coffee,Beverages,Coffee,rules
+tea,Beverages,Tea,rules
+detergent,Household,Detergent,rules
+paper towel,Household,Paper Towel,rules
+toilet paper,Household,Toilet Paper,rules
+trash bags,Household,Trash Bags,rules
+cleaner,Household,Cleaner,rules
+bleach,Household,Bleach,rules
+dish soap,Household,Dish Soap,rules
+shampoo,Personal Care,Shampoo,rules
+soap,Personal Care,Soap,rules
+toothpaste,Personal Care,Toothpaste,rules
+deodorant,Personal Care,Deodorant,rules
+razor,Personal Care,Razor,rules
+lotion,Personal Care,Lotion,rules
+conditioner,Personal Care,Conditioner,rules
+bananas,Produce,Bananas,rules
+red apples,Produce,Apples,rules
+baby spinach,Produce,Spinach,rules
+carrots,Produce,Carrots,rules
+broccoli florets,Produce,Broccoli,rules
+chobani greek yogurt,Dairy,Greek Yogurt,rules
+whole milk,Dairy,Milk,rules
+cheddar cheese block,Dairy,Cheddar Cheese,rules
+unsalted butter,Dairy,Butter,rules
+oat creamer,Dairy,Oat Creamer,rules
+whole wheat bread,Bakery,Whole Wheat Bread,rules
+bagels,Bakery,Bagels,rules
+croissants,Bakery,Croissants,rules
+english muffins,Bakery,English Muffins,rules
+once-upon-a-farm baby pouches,Pantry,Baby Food Pouches,manual
+gerber baby cereal,Pantry,Baby Cereal,rules
+rice,Pantry,Rice,rules
+pasta spaghetti,Pantry,Spaghetti,rules
+canned tomatoes,Pantry,Canned Tomatoes,rules
+olive oil,Pantry,Olive Oil,rules
+peanut butter,Pantry,Peanut Butter,rules
+jelly grape,Pantry,Grape Jelly,rules
+chicken breasts,Meat,Chicken Breasts,rules
+ground beef,Meat,Ground Beef,rules
+pork chops,Meat,Pork Chops,rules
+salmon fillet,Seafood,Salmon Fillet,rules
+shrimp raw,Seafood,Shrimp,rules
+frozen peas,Frozen,Frozen Peas,rules
+frozen corn,Frozen,Frozen Corn,rules
+ice cream vanilla,Frozen,Ice Cream,rules
+coca cola 12 pack,Beverages,Coca-Cola,rules
+orange juice,Beverages,Orange Juice,rules
+green tea bags,Beverages,Green Tea,rules
+bottled water,Beverages,Bottled Water,rules
+potato chips,Snacks,Potato Chips,rules
+granola bars,Snacks,Granola Bars,rules
+dark chocolate,Snacks,Dark Chocolate,rules
+cookies chocolate chip,Snacks,Chocolate Chip Cookies,rules
+laundry detergent,Household,Laundry Detergent,rules
+paper towels,Household,Paper Towels,rules
+toilet paper,Household,Toilet Paper,rules
+dish soap,Household,Dish Soap,rules
