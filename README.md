@@ -5,11 +5,33 @@ produce a bulleted shopping list. It uses a simple rule-based classifier
 and an optional GenAI-backed fallback when the rule-based classifier
 returns `Misc`.
 
+## Mobile App (NEW)
+
+**Frontend**: Expo + React Native app located in `frontend/shoproute/`
+
+**Features**:
+- Store selection dropdown (Wegmans, ShopRite, Trader Joe's)
+- Item input with comma-separated grocery items
+- Organized shopping list by store zones
+- Interactive checkboxes with strikethrough for completed items
+- Auto-completion of categories (crossed out, grayed, moved to bottom)
+- Real-time organization using backend API
+
+**Setup**:
+```bash
+cd frontend/shoproute
+npm install
+npx expo start
+# Press 'w' for web browser testing
+```
+
 ## Files
 - `backend/app/organize.py` — canonical implementation: classification,
   DB-backed store layout lookup, AI fallback, and CLI entrypoint.
 - `backend/app/db.py` — sqlite-backed item cache and store-layout storage.
+- `backend/app/main.py` — FastAPI backend with CORS for mobile app integration.
 - `backend/app/` — contains the FastAPI backend and related modules.
+- `frontend/shoproute/` — Expo React Native mobile application.
 - `tests/test_store_sort.py` — pytest tests (includes mocks for GenAI).
 
 ## Usage (library)
@@ -73,11 +95,12 @@ actual API key to run.
 ## Development / VS Code
  - Activate the project venv (example - adjust to your venv path):
 ```
-source backend/app/venv/bin/activate
+cd /path/to/ShopRoute
+source venv/bin/activate
 ```
  - Install dependencies if you haven't already:
 ```
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
 ```
  - Ensure VS Code uses that interpreter (see `.vscode/settings.json`).
 
@@ -100,11 +123,36 @@ PY
 ## Running the FastAPI backend
 From the repo root, while the venv is active:
 ```
-uvicorn backend.app.main:app --reload
+cd backend
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 The backend exposes endpoints for querying store layouts and classification;
 see `backend/app/main.py` for route details.
+
+**CORS Configuration**: The backend includes CORS middleware to allow requests from the Expo development server (typically `localhost:8081`).
+
+## Environment Variables
+Set up environment variables for AI classification:
+```bash
+# Create .env file in backend directory
+echo "GEMENI_FREE_API=your-api-key-here" >> backend/.env
+echo "ORGANIZE_DEBUG=true" >> backend/.env
+```
+
+## Mobile App Development
+The mobile app uses Expo + React Native and connects to the FastAPI backend:
+
+**Key Features**:
+- Store selection with dynamic layouts
+- Interactive shopping list with checkboxes
+- Completed categories auto-move to bottom
+- Real-time item classification via API
+
+**Development Workflow**:
+1. Start backend: `uvicorn app.main:app --reload --host 0.0.0.0 --port 8000`
+2. Start frontend: `cd frontend/shoproute && npx expo start`
+3. Press 'w' for web development or scan QR code for mobile
 
 ## License
 Unlicensed — copy or adapt as you like for personal use.
