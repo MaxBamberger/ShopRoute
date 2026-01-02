@@ -1,0 +1,43 @@
+zone_id,category
+1,Produce
+2,Bakery
+3,Meat
+3,Seafood
+4,Dairy
+5,Frozen
+6,Pantry
+7,Household
+8,Produce
+9,Bakery
+10,Meat
+10,Seafood
+10,Deli
+11,Beverages
+12,Personal Care
+13,Pantry
+14,Dairy
+15,Frozen
+16,Household
+26,Produce
+27,Bakery
+28,Meat
+28,Seafood
+28,Deli
+29,Personal Care
+30,Beer
+30,Wine
+30,Spirits
+31,Beverages
+32,Pantry
+33,Household
+34,Frozen
+35,Dairy
+36,Produce
+37,Bakery
+38,Dairy
+39,Deli
+40,Pantry
+41,Beverages
+42,Frozen
+43,Household
+44,Personal Care

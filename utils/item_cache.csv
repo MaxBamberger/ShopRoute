@@ -1,0 +1,186 @@
+item,category,normalized_name,source,created_at
+bell pepper,Produce,Bell Pepper,ai,2025-12-26 19:15:28
+ice cream,Frozen,Ice Cream,rules,2025-12-26 19:15:28
+whole milk,Dairy,Milk,rules,2025-12-26 19:15:28
+crackers,Snacks,Crackers,ai,2025-12-26 19:15:41
+fish,Seafood,Fish,ai,2025-12-26 19:15:42
+kosher chicken,Meat,Chicken,ai,2025-12-26 19:15:43
+cumin,Pantry,Cumin,ai,2025-12-26 19:15:44
+bagels,Bakery,Bagels,rules,2025-12-26 19:15:44
+once-upon-a-farm baby pouches,Pantry,Baby Pouches,manual,2025-12-28 18:26:32
+banana,Produce,Banana,rules,2025-12-29 14:44:16
+bananas,Produce,Bananas,rules,2025-12-29 14:44:16
+spinach,Produce,Spinach,rules,2025-12-29 14:44:16
+lettuce,Produce,Lettuce,rules,2025-12-29 14:44:16
+apple,Produce,Apple,rules,2025-12-29 14:44:16
+apples,Produce,Apples,rules,2025-12-29 14:44:16
+bread,Bakery,Bread,rules,2025-12-29 14:44:16
+sourdough,Bakery,Sourdough,rules,2025-12-29 14:44:16
+sour dough,Bakery,Sourdough bread,rules,2025-12-29 14:44:16
+bagel,Bakery,Bagel,rules,2025-12-29 14:44:16
+milk,Dairy,Milk,rules,2025-12-29 14:44:16
+yogurt,Dairy,Yogurt,rules,2025-12-29 14:44:16
+greek yogurt,Dairy,Greek Yogurt,rules,2025-12-29 14:44:16
+cheese,Dairy,Cheese,rules,2025-12-29 14:44:16
+ice-cream,Frozen,Ice-Cream,rules,2025-12-29 14:44:16
+icecream,Frozen,Icecream,rules,2025-12-29 14:44:16
+butter,Dairy,Butter,rules,2025-12-29 14:44:16
+eggs,Dairy,Eggs,rules,2025-12-29 14:44:16
+garlic,Produce,Garlic,rules,2025-12-29 14:44:16
+peas,Produce,Peas,rules,2025-12-29 14:44:16
+cereal,Pantry,Cereal,rules,2025-12-29 14:44:16
+pasta,Pantry,Pasta,rules,2025-12-29 14:44:16
+rice,Pantry,Rice,rules,2025-12-29 14:44:16
+coffee,Beverages,Coffee,rules,2025-12-29 14:44:16
+tea,Beverages,Tea,rules,2025-12-29 14:44:16
+honey,Pantry,Honey,rules,2025-12-29 14:44:16
+noodles,Pantry,Noodles,rules,2025-12-29 14:44:16
+peanut butter,Pantry,Peanut Butter,rules,2025-12-29 14:44:16
+almond butter,Pantry,Almond Butter,rules,2025-12-29 14:44:16
+dates,Produce,Dates,rules,2025-12-29 14:44:16
+chocolate,Snacks,Chocolate,rules,2025-12-29 14:44:16
+bread crumbs,Pantry,Bread Crumbs,rules,2025-12-29 14:44:16
+walnuts,Pantry,Walnuts,rules,2025-12-29 14:44:16
+chicken,Meat,Chicken,rules,2025-12-29 14:44:16
+beef,Meat,Beef,rules,2025-12-29 14:44:16
+pork,Meat,Pork,rules,2025-12-29 14:44:16
+steak,Meat,Steak,rules,2025-12-29 14:44:16
+bacon,Meat,Bacon,rules,2025-12-29 14:44:16
+sausage,Meat,Sausage,rules,2025-12-29 14:44:16
+turkey,Meat,Turkey,rules,2025-12-29 14:44:16
+ham,Meat,Ham,rules,2025-12-29 14:44:16
+lamb,Meat,Lamb,rules,2025-12-29 14:44:16
+salmon,Seafood,Salmon,rules,2025-12-29 14:44:16
+shrimp,Seafood,Shrimp,rules,2025-12-29 14:44:16
+tuna,Seafood,Tuna,rules,2025-12-29 14:44:16
+cod,Seafood,Cod,rules,2025-12-29 14:44:16
+crab,Seafood,Crab,rules,2025-12-29 14:44:16
+lobster,Seafood,Lobster,rules,2025-12-29 14:44:16
+scallop,Seafood,Scallop,rules,2025-12-29 14:44:16
+tomato,Produce,Tomato,rules,2025-12-29 14:44:16
+onion,Produce,Onion,rules,2025-12-29 14:44:16
+onions,Produce,Onions,rules,2025-12-29 14:44:16
+potato,Produce,Potatoes,rules,2025-12-29 14:44:16
+potatoes,Produce,Potatoes,rules,2025-12-29 14:44:16
+carrots,Produce,Carrots,rules,2025-12-29 14:44:16
+raspberry,Produce,Raspberry,rules,2025-12-29 14:44:16
+vegetable,Produce,Vegetable,rules,2025-12-29 14:44:16
+cream,Dairy,Cream,rules,2025-12-29 14:44:16
+egg,Dairy,Egg,rules,2025-12-29 14:44:16
+bun,Bakery,Bun,rules,2025-12-29 14:44:16
+roll,Bakery,Roll,rules,2025-12-29 14:44:16
+croissant,Bakery,Croissant,rules,2025-12-29 14:44:16
+popsicle,Frozen,Popsicle,rules,2025-12-29 14:44:16
+frozen veggies,Frozen,Frozen Vegetables,rules,2025-12-29 14:44:16
+frozen vegetables,Frozen,Frozen Vegetables,rules,2025-12-29 14:44:16
+canned,Pantry,Canned,rules,2025-12-29 14:44:16
+beans,Pantry,Beans,rules,2025-12-29 14:44:16
+sauce,Pantry,Sauce,rules,2025-12-29 14:44:16
+oil,Pantry,Oil,rules,2025-12-29 14:44:16
+vinegar,Pantry,Vinegar,rules,2025-12-29 14:44:16
+flour,Pantry,Flour,rules,2025-12-29 14:44:16
+sugar,Pantry,Sugar,rules,2025-12-29 14:44:16
+spice,Pantry,Spice,rules,2025-12-29 14:44:16
+chip,Snacks,Chip,rules,2025-12-29 14:44:16
+chips,Snacks,Chips,rules,2025-12-29 14:44:16
+cracker,Snacks,Cracker,rules,2025-12-29 14:44:16
+cookie,Snacks,Cookie,rules,2025-12-29 14:44:16
+popcorn,Snacks,Popcorn,rules,2025-12-29 14:44:16
+granola,Snacks,Granola,rules,2025-12-29 14:44:16
+juice,Beverages,Juice,rules,2025-12-29 14:44:16
+soda,Beverages,Soda,rules,2025-12-29 14:44:16
+cola,Beverages,Cola,rules,2025-12-29 14:44:16
+water,Beverages,Water,rules,2025-12-29 14:44:16
+beer,Beverages,Beer,rules,2025-12-29 14:44:16
+wine,Beverages,Wine,rules,2025-12-29 14:44:16
+detergent,Household,Detergent,rules,2025-12-29 14:44:16
+paper towel,Household,Paper Towel,rules,2025-12-29 14:44:16
+toilet paper,Household,Toilet Paper,rules,2025-12-29 14:44:16
+trash bags,Household,Trash Bags,rules,2025-12-29 14:44:16
+cleaner,Household,Cleaner,rules,2025-12-29 14:44:16
+bleach,Household,Bleach,rules,2025-12-29 14:44:16
+dish soap,Household,Dish Soap,rules,2025-12-29 14:44:16
+shampoo,Personal Care,Shampoo,rules,2025-12-29 14:44:16
+soap,Personal Care,Soap,rules,2025-12-29 14:44:16
+toothpaste,Personal Care,Toothpaste,rules,2025-12-29 14:44:16
+deodorant,Personal Care,Deodorant,rules,2025-12-29 14:44:16
+razor,Personal Care,Razor,rules,2025-12-29 14:44:16
+lotion,Personal Care,Lotion,rules,2025-12-29 14:44:16
+conditioner,Personal Care,Conditioner,rules,2025-12-29 14:44:16
+red apples,Produce,Apples,rules,2025-12-29 14:44:16
+baby spinach,Produce,Spinach,rules,2025-12-29 14:44:16
+broccoli florets,Produce,Broccoli,rules,2025-12-29 14:44:16
+chobani greek yogurt,Dairy,Greek Yogurt,rules,2025-12-29 14:44:16
+cheddar cheese block,Dairy,Cheddar Cheese,rules,2025-12-29 14:44:16
+unsalted butter,Dairy,Butter,rules,2025-12-29 14:44:16
+oat creamer,Dairy,Oat Creamer,rules,2025-12-29 14:44:16
+whole wheat bread,Bakery,Whole Wheat Bread,rules,2025-12-29 14:44:16
+croissants,Bakery,Croissants,rules,2025-12-29 14:44:16
+english muffins,Bakery,English Muffins,rules,2025-12-29 14:44:16
+gerber baby cereal,Pantry,Baby Cereal,rules,2025-12-29 14:44:16
+pasta spaghetti,Pantry,Spaghetti,rules,2025-12-29 14:44:16
+canned tomatoes,Pantry,Canned Tomatoes,rules,2025-12-29 14:44:16
+olive oil,Pantry,Olive Oil,rules,2025-12-29 14:44:16
+jelly grape,Pantry,Grape Jelly,rules,2025-12-29 14:44:16
+chicken breasts,Meat,Chicken Breasts,rules,2025-12-29 14:44:16
+ground beef,Meat,Ground Beef,rules,2025-12-29 14:44:16
+pork chops,Meat,Pork Chops,rules,2025-12-29 14:44:16
+salmon fillet,Seafood,Salmon Fillet,rules,2025-12-29 14:44:16
+shrimp raw,Seafood,Shrimp,rules,2025-12-29 14:44:16
+frozen peas,Frozen,Frozen Peas,rules,2025-12-29 14:44:16
+frozen corn,Frozen,Frozen Corn,rules,2025-12-29 14:44:16
+ice cream vanilla,Frozen,Ice Cream,rules,2025-12-29 14:44:16
+coca cola 12 pack,Beverages,Coca-Cola,rules,2025-12-29 14:44:16
+orange juice,Beverages,Orange Juice,rules,2025-12-29 14:44:16
+green tea bags,Beverages,Green Tea,rules,2025-12-29 14:44:16
+bottled water,Beverages,Bottled Water,rules,2025-12-29 14:44:16
+potato chips,Snacks,Potato Chips,rules,2025-12-29 14:44:16
+granola bars,Snacks,Granola Bars,rules,2025-12-29 14:44:16
+dark chocolate,Snacks,Dark Chocolate,rules,2025-12-29 14:44:16
+cookies chocolate chip,Snacks,Chocolate Chip Cookies,rules,2025-12-29 14:44:16
+laundry detergent,Household,Laundry Detergent,rules,2025-12-29 14:44:16
+paper towels,Household,Paper Towels,rules,2025-12-29 14:44:16
+quirky item,Misc,Quirky Item,ai,2025-12-29 21:14:06
+tomato sauce,Pantry,Tomato Sauce,ai,2025-12-30 02:30:48
+habanero pepper,Produce,Habanero Pepper,ai,2025-12-30 03:45:01
+jalapeno pepper,Produce,Jalapeno Pepper,ai,2025-12-30 03:45:02
+almonds,Pantry,Almonds,ai,2025-12-30 04:17:04
+pecans,Pantry,Pecans,ai,2025-12-30 04:17:06
+strawberries,Produce,Strawberries,ai,2025-12-30 04:17:07
+grapes,Produce,Grapes,ai,2025-12-30 04:17:08
+cottage cheese,Dairy,Cottage Cheese,ai,2025-12-30 04:17:10
+rice noodles,Pantry,Rice Noodles,ai,2025-12-30 04:17:11
+lemons,Produce,Lemons,ai,2025-12-30 20:17:21
+eggplant,Produce,Eggplant,ai,2025-12-30 20:17:22
+corn,Produce,Corn,ai,2025-12-30 20:17:23
+paprika,Pantry,Paprika,ai,2025-12-30 20:17:24
+zucchini,Produce,Zucchini,ai,2025-12-30 20:17:25
+tomatoes,Produce,Tomatoes,ai,2025-12-30 20:17:26
+maple syrup,Pantry,Maple Syrup,ai,2025-12-30 20:17:26
+sweet potatoes,Produce,Sweet Potatoes,ai,2025-12-30 20:17:27
+pomegranate,Produce,Pomegranate,ai,2025-12-30 20:17:28
+gochujang sauce,Pantry,Gochujang Sauce,ai,2025-12-30 20:17:29
+red wine,Beverages,Red Wine,ai,2025-12-30 20:17:30
+pears,Produce,Pears,ai,2025-12-31 02:21:08
+flax seed oil,Pantry,Flax Seed Oil,ai,2026-01-01 15:45:54
+spaghetti,Pantry,Spaghetti,ai,2026-01-01 15:48:19
+lara bars,Snacks,Snack Bar,ai,2026-01-01 15:48:20
+cookies,Snacks,Cookies,ai,2026-01-01 16:01:06
+raos sauce,Pantry,Raos Sauce,ai,2026-01-01 16:01:06
+ben & jerrys,Frozen,Ice Cream,ai,2026-01-01 16:02:44
+oatmilk,Dairy,Oatmilk,ai,2026-01-01 16:46:17
+almond milk,Dairy,Almond Milk,ai,2026-01-01 16:46:17
+weiman cleaner,Household,Weiman Cleaner,ai,2026-01-01 17:00:21
+josh wine,Beverages,Josh Wine,ai,2026-01-01 17:00:21
+pecorino romano,Dairy,Pecorino Romano,ai,2026-01-01 17:56:26
+bone broth,Pantry,Bone Broth,ai,2026-01-01 17:56:28
+italian ice,Frozen,Italian Ice,ai,2026-01-01 18:08:38
+mexican taco mix,Pantry,Taco Mix,ai,2026-01-01 18:08:40
+salsa,Pantry,Salsa,ai,2026-01-01 18:08:41
+whiskey,Beverages,Whiskey,ai,2026-01-01 18:08:42
+romaine,Produce,Romaine,ai,2026-01-01 18:08:43
+oranges,Produce,Oranges,ai,2026-01-01 18:59:13
+grapefruit,Produce,Grapefruit,ai,2026-01-01 18:59:14
+chicken breast,Meat,Chicken Breast,ai,2026-01-01 18:59:15
+arugula,Produce,Arugula,ai,2026-01-01 18:59:16
+icelandic yogurt,Dairy,Yogurt,ai,2026-01-01 18:59:17

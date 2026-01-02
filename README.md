@@ -1,4 +1,4 @@
-# StoreRoute — Grocery item sorter
+# ShopRoute — Grocery item sorter
 
 Small utility to order grocery items according to a store layout and
 produce a bulleted shopping list. It uses a simple rule-based classifier
@@ -6,8 +6,6 @@ and an optional GenAI-backed fallback when the rule-based classifier
 returns `Misc`.
 
 ## Files
-- `store_sort.py` — (compat) small wrapper that re-exports the current
-  implementation in `backend.app.organize` for backwards compatibility.
 - `backend/app/organize.py` — canonical implementation: classification,
   DB-backed store layout lookup, AI fallback, and CLI entrypoint.
 - `backend/app/db.py` — sqlite-backed item cache and store-layout storage.
@@ -20,22 +18,19 @@ returns structured data (`dict` or list-of-groups depending on version).
 For backwards compatibility, you can still import the top-level wrapper:
 ```
 from store_sort import order_items
-groups = order_items('TRADER_JOES', ['Bananas','spinach','sourdough','milk'])
+groups = order_items(store_id = 1, items=['Bananas','spinach','sourdough','milk'])
 for g in groups:
-  print(g)
+  print(f"{g['zone']}:")
+    for name in g['items']:
+        print(f"- {name}")
+    print("")
 ```
 
 ## CLI usage
-There are two common ways to run the tool from the command line.
-
-- Run the compatibility wrapper (keeps the old CLI path):
-```
-python3 store_sort.py --store TRADER_JOES --list "Bananas,spinach"
-```
 
 - Run the canonical module directly (recommended):
 ```
-python3 -m backend.app.organize --store Wegmans --list "Bananas,spinach"
+python3 -m backend.app.organize --store ShopRite --zip 07006 --list "Bananas,spinach"
 ```
 
 Notes:

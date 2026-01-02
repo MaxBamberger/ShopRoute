@@ -1,0 +1,36 @@
+zone_id,location_id,zone_name,zone_order
+1,1,Produce,1
+2,1,Bakery,2
+3,1,Meat & Seafood,3
+4,1,Dairy,4
+5,1,Frozen,5
+6,1,Pantry,6
+7,1,Household,7
+8,2,Produce,1
+9,2,Bakery,2
+10,2,Meat & Seafood,3
+11,2,Beverages,4
+12,2,Personal Care,5
+13,2,Pantry,6
+14,2,Dairy,7
+15,2,Frozen,8
+16,2,Household,9
+26,4,Produce,1
+27,4,Bakery,2
+28,4,Meat & Seafood,3
+29,4,Personal Care,4
+30,4,Alcohol,5
+31,4,Beverages,6
+32,4,Pantry,7
+33,4,Household,8
+34,4,Frozen,9
+35,4,Dairy,10
+36,5,Produce,1
+37,5,Bakery,2
+38,5,Dairy,3
+39,5,Deli,4
+40,5,Pantry,5
+41,5,Beverages,6
+42,5,Frozen,7
+43,5,Household,8
+44,5,Personal Care,9
