@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Query
-from app.models import OrganizeRequest, OrganizeResponse, StoreDetailRequest, StoreDetailsResponse
-from app.organize import order_items, get_store
+from .models import OrganizeRequest, OrganizeResponse, StoreDetailRequest, StoreDetailsResponse
+from .organize import order_items, get_store
 
 app = FastAPI()
 

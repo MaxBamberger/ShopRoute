@@ -12,9 +12,8 @@ warnings.filterwarnings("ignore", message="NotOpenSSLWarning")
 import re
 import sys
 
-# Prefer package import, but allow running this file directly by adding
-# the repository root to sys.path when `backend` isn't importable.
-from app.db import get_cached_item, cache_item, get_store_layout, get_store_id, get_store_details
+# Use relative imports when running as part of the package
+from .db import get_cached_item, cache_item, get_store_layout, get_store_id, get_store_details
 
 GENERIC_LAYOUT = [
     ('Produce', ['Produce']),
