@@ -1,13 +1,28 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI, Query
 from .models import OrganizeRequest, OrganizeResponse, StoreDetailRequest, StoreDetailsResponse
 from .organize import order_items, get_store
+from fastapi.middleware.cors import CORSMiddleware
 
+load_dotenv()
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8081", "http://127.0.0.1:8081", "*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+
+@app.get("/test")
+def test_endpoint():
+    return {"message": "CORS test successful", "timestamp": "2026-01-02"}
 
 
 # @app.get("/items/{item_id}")
