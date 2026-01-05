@@ -1,5 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import { 
+  View, 
+  Text, 
+  TextInput, 
+  TouchableOpacity, 
+  StyleSheet, 
+  Alert, 
+  ScrollView, 
+  KeyboardAvoidingView, 
+  Platform,
+  TouchableWithoutFeedback,
+  Keyboard
+} from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { useRouter } from 'expo-router';
 import axios from 'axios';
@@ -30,7 +42,7 @@ export default function ItemInput() {
         { store_id: 3, name: "Trader Joe's", chain: "Trader Joe's" }
       ];
       setStores(storeList);
-      setSelectedStore('Wegmans'); // Default selection
+      setSelectedStore(storeList[0].name); // Set first store as default
     } catch (error) {
       console.error('Failed to fetch stores:', error);
     } finally {
@@ -67,48 +79,77 @@ export default function ItemInput() {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>ShopRoute</Text>
-      <Text style={styles.subtitle}>Enter your grocery items</Text>
-      
-      <TextInput
-        style={styles.input}
-        placeholder="milk, bread, bananas, eggs..."
-        value={items}
-        onChangeText={setItems}
-        multiline
-      />
-
-      <Text style={styles.label}>Select Store:</Text>
-      <View style={styles.pickerContainer}>
-        <Picker
-          selectedValue={selectedStore}
-          onValueChange={setSelectedStore}
-          style={styles.picker}
+    <KeyboardAvoidingView 
+      style={styles.container} 
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+    >
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <ScrollView 
+          contentContainerStyle={styles.scrollContainer}
+          keyboardShouldPersistTaps="handled"
         >
-          {stores.map((store) => (
-            <Picker.Item 
-              key={store.store_id} 
-              label={store.name} 
-              value={store.name} 
-            />
-          ))}
-        </Picker>
-      </View>
-      
-      <TouchableOpacity style={styles.button} onPress={handleOrganize}>
-        <Text style={styles.buttonText}>Organize List</Text>
-      </TouchableOpacity>
-    </View>
+          <Text style={styles.title}>ShopRoute</Text>
+          <Text style={styles.subtitle}>Enter your grocery items</Text>
+          
+          <TextInput
+            style={styles.input}
+            placeholder="milk, bread, bananas, eggs..."
+            value={items}
+            onChangeText={setItems}
+            multiline
+            returnKeyType="done"
+            blurOnSubmit={true}
+          />
+
+          <Text style={styles.label}>Select Store:</Text>
+          <View style={styles.pickerContainer}>
+            <Picker
+              selectedValue={selectedStore}
+              onValueChange={(itemValue) => {
+                console.log('Store selected:', itemValue);
+                setSelectedStore(itemValue);
+              }}
+              style={styles.picker}
+              itemStyle={styles.pickerItem}
+              mode="dropdown"
+            >
+              {stores.map((store) => (
+                <Picker.Item 
+                  key={store.store_id} 
+                  label={store.name} 
+                  value={store.name}
+                  color="#333"
+                />
+              ))}
+            </Picker>
+          </View>
+          
+          {/* Debug info - remove this later */}
+          <Text style={styles.debugText}>Selected: {selectedStore}</Text>
+          
+          <TouchableOpacity 
+            style={styles.button} 
+            onPress={handleOrganize}
+            activeOpacity={0.8}
+          >
+            <Text style={styles.buttonText}>Organize List</Text>
+          </TouchableOpacity>
+        </ScrollView>
+      </TouchableWithoutFeedback>
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     backgroundColor: '#fff',
+  },
+  scrollContainer: {
+    flexGrow: 1,
+    padding: 20,
     justifyContent: 'center',
+    minHeight: '100%',
   },
   title: {
     fontSize: 32,
@@ -132,6 +173,7 @@ const styles = StyleSheet.create({
     minHeight: 100,
     textAlignVertical: 'top',
     marginBottom: 20,
+    backgroundColor: '#fff',
   },
   label: {
     fontSize: 16,
@@ -143,16 +185,46 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ddd',
     borderRadius: 8,
-    marginBottom: 20,
+    marginBottom: 30,
+    backgroundColor: '#fff',
+    ...Platform.select({
+      ios: {
+        height: 200,
+      },
+      android: {
+        height: 50,
+      },
+    }),
   },
   picker: {
-    height: 50,
+    height: '100%',
+    width: '100%',
+  },
+  pickerItem: {
+    fontSize: 16,
+    height: 200,
   },
   button: {
     backgroundColor: '#2e7d32',
     padding: 15,
     borderRadius: 8,
     alignItems: 'center',
+    marginTop: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  debugText: {
+    fontSize: 14,
+    color: '#666',
+    textAlign: 'center',
+    marginBottom: 10,
+    fontStyle: 'italic',
   },
   buttonText: {
     color: 'white',

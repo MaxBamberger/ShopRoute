@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, StyleSheet, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import axios from 'axios';
+import { API_CONFIG } from '../config';
 
 interface OrganizedGroup {
   zone: string;
@@ -24,15 +25,18 @@ export default function ShoppingList() {
       const itemList = typeof items === 'string' ? items.split(',').map(item => item.trim()) : [];
       const storeId = typeof store_id === 'string' ? parseInt(store_id) : 1;
       
-      const response = await axios.post('http://localhost:8000/organize', {
+      console.log('Making request to:', `${API_CONFIG.BASE_URL}/organize`);
+      console.log('Request data:', { items: itemList, store_id: storeId });
+      
+      const response = await axios.post(`${API_CONFIG.BASE_URL}/organize`, {
         items: itemList,
         store_id: storeId
       });
       
       setOrganizedList(response.data.content);
     } catch (err) {
-      setError('Failed to organize items. Make sure your backend is running.');
-      console.error(err);
+      console.error('API Error:', err);
+      setError(`Failed to organize items. Make sure your backend is running on ${API_CONFIG.BASE_URL}`);
     } finally {
       setLoading(false);
     }
